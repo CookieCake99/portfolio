@@ -1,0 +1,16 @@
+body {
+    --lighter-color: #fefae0;
+    --light-color: #faedcd;
+    --accent-color: #d4a373;
+    --text-color: #232320;
+
+    margin: 0;
+    background-color: var(--lighter-color);
+    color: var(--text-color);
+}
+
+.headerSection {
+    background-color: var(--light-color);
+    width: 100%;
+    height: 4em;
+}
