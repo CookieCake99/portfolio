@@ -4,14 +4,12 @@ import {QuickLinks} from "./QuickLinks";
 import {HomeButton} from "./HomeButton";
 import {SocialMediaLinks} from "./SocialMediaLinks";
 
-export interface HeaderSectionProps {
-
-}
-
-export const HeaderSection = (props: HeaderSectionProps) => {
-    return <div className={"headerSection"}>
-        <QuickLinks/>
-        <HomeButton/>
-        <SocialMediaLinks/>
+export const HeaderSection = () => {
+  return <div className={"header-section"}>
+    <div className={"header-nav"}>
+      <QuickLinks/>
+      <HomeButton/>
+      <SocialMediaLinks/>
     </div>
+  </div>
 }
