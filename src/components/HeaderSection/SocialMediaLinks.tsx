@@ -1,4 +1,5 @@
 import {getSocialMediaLinks} from "../../config/SocialMediaLinks";
+import "./HeaderStyles.css"
 
 export const SocialMediaLinks = (): JSX.Element => {
   const socialMediaLinks = getSocialMediaLinks()

@@ -1,5 +1,6 @@
 import {getQuickLinkRoutes} from "../../config/Routes";
 import {Link} from "react-router-dom";
+import "./HeaderStyles.css"
 
 export const QuickLinks = (): JSX.Element => {
   const routes = getQuickLinkRoutes()
