@@ -83,3 +83,7 @@ body {
     padding: 1.5em 2em;
     color: var(--text-color);
 }
+
+.socials-link:hover {
+    color: var(--accent-color);
+}
