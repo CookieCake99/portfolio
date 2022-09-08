@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/styles.css"
+import "./HeaderStyles.css"
 import {QuickLinks} from "./QuickLinks";
 import {HomeButton} from "./HomeButton";
 import {SocialMediaLinks} from "./SocialMediaLinks";

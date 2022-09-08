@@ -2,6 +2,11 @@ import {HomePage} from "../components/HomePage/HomePage";
 import {ProjectsPage} from "../components/ProjectsPage/ProjectsPage";
 import {AboutPage} from "../components/About/AboutPage";
 
+
+export const getHomePageLink = () => {
+  return "/"
+}
+
 interface QuickLinkProps {
   key: string
   text: string
@@ -14,7 +19,7 @@ export const getQuickLinkRoutes = (): QuickLinkProps[] => {
     {
       key: "home",
       text: "Home",
-      path: "/",
+      path: getHomePageLink(),
       element: <HomePage />
     },
     {
