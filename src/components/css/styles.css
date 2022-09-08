@@ -70,3 +70,16 @@ body {
 .quick-link:hover span::before {
     transform: scaleX(1);
 }
+
+.socials-wrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    padding: 1.5em 2em;
+    color: var(--text-color);
+}

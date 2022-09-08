@@ -1,11 +1,18 @@
-import React from 'react';
-
-export interface SocialMediaLinksProps {
-
-}
+import {getSocialMediaLinks} from "../../config/SocialMediaLinks";
 
 export const SocialMediaLinks = (): JSX.Element => {
-    return <div>
+  const socialMediaLinks = getSocialMediaLinks()
 
-    </div>
+  return <div className={"socials-wrapper"}>
+    {socialMediaLinks.map(value => {
+      return <a
+        key={value.key}
+        href={value.url}
+        title={value.hover_text}
+        className={"socials-link"}
+      >
+        {value.icon}
+      </a>
+    })}
+  </div>
 }
