@@ -1,0 +1,72 @@
+/*------------------*/
+/* General Styles */
+/*------------------*/
+
+body {
+    --lighter-color: #fefae0;
+    --light-color: #faedcd;
+    --accent-color: #d4a373;
+    --text-color: #232320;
+
+    margin: 0;
+    background-color: var(--lighter-color);
+    color: var(--text-color);
+    font-family: Biotif-Regular, Arial, sans-serif;
+}
+
+/*------------------*/
+/* Header Styles */
+/*------------------*/
+
+.header-section {
+    background-color: var(--light-color);
+    width: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.quick-links-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-link {
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5em 2em;
+    font-size: 1.1em;
+
+    /*needed for hover animation*/
+    display: inline-block;
+    position: relative;
+}
+
+.quick-link > span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.25em;
+    bottom: 0;
+    left: 0;
+    background: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.quick-link:hover {
+    color: var(--accent-color);
+}
+
+.quick-link:hover span::before {
+    transform: scaleX(1);
+}

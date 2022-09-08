@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import "./components/css/styles.css"
 import reportWebVitals from './reportWebVitals';
+import {MainPageWrapper} from "./components/MainPage/MainPageWrapper";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <MainPageWrapper />
   </React.StrictMode>
 );
 
