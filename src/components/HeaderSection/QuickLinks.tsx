@@ -1,5 +1,4 @@
 import {getQuickLinkRoutes} from "../../config/Routes";
-import {Link} from "react-router-dom";
 import "./HeaderStyles.css"
 
 export const QuickLinks = (): JSX.Element => {
@@ -7,9 +6,9 @@ export const QuickLinks = (): JSX.Element => {
 
   return <div className={"quick-links-wrapper"}>
     {routes.map((value, index) => {
-      return <Link key={index} to={value.path} className={"quick-link"}>
+      return <a key={index} href={value.path} className={"quick-link"}>
         <span>{value.text}</span>
-      </Link>
+      </a>
     })}
   </div>
 }
