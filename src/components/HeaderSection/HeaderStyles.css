@@ -5,6 +5,9 @@
 .header-section {
     background-color: var(--light-color);
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .header-nav {
