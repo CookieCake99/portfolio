@@ -1,7 +1,7 @@
 .about-section-wrapper {
     display: flex;
     justify-content: center;
-    height: calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
     padding: 0 6em;
 }
 
@@ -19,8 +19,9 @@
     }
 }
 
-.about-me-section {
-    width: 50%;
+.about-me-section,
+.about-cv-section {
+    flex: 1 1 0;
     font-size: 1.2em;
 }
 
@@ -53,11 +54,6 @@
 .about-cv-list li {
     padding-left: 1em;
     position: relative;
-}
-
-.about-cv-section {
-    width: 50%;
-    font-size: 1.2em;
 }
 
 .about-cv-selection {
