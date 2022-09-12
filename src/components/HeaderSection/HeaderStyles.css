@@ -25,6 +25,12 @@
     flex-direction: row;
 }
 
+@media screen and (max-width: 777px) {
+    .quick-links-wrapper {
+        display: none;
+    }
+}
+
 .quick-link {
     text-decoration: none;
     color: var(--text-color);
@@ -61,19 +67,15 @@
     transform: scaleX(1);
 }
 
-.home-button {
-    display: flex;
-    align-items: center;
-    width: 64px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-}
-
 .socials-wrapper {
     display: flex;
     flex-direction: row;
+}
 
+@media screen and (max-width: 777px) {
+    .socials-wrapper {
+        margin: auto;
+    }
 }
 
 .socials-link {
