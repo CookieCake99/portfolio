@@ -68,7 +68,6 @@
 .about-cv-button-section {
     display: flex;
     flex-direction: column;
-    width: auto;
 }
 
 .about-cv-button {
@@ -77,11 +76,12 @@
     padding: 0.75em 0.75em 0.75em 1em;
     font-size: 0.8em;
     text-align: left;
-    border-left: 1px solid var(--text-color);
+    border-left: 2px solid var(--text-color);
+    width: 12em;
 }
 
 .selected-cv-item {
-    border-left: 1px solid var(--accent-color);
+    border-left: 2px solid var(--accent-color);
     color: var(--accent-color);
 }
 

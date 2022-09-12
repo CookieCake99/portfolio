@@ -1,0 +1,13 @@
+.hero-section-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-size: 5.5em;
+    letter-spacing: -3px;
+    margin: 0;
+}
