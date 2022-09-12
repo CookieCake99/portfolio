@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 1.5em;
 }
 
 .hero-title {
@@ -12,8 +13,15 @@
     margin: 0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 777px) and (max-width: 1024px){
     .hero-title {
         font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 777px){
+    .hero-title {
+        font-size: 2em;
+        letter-spacing: -1px;
     }
 }
