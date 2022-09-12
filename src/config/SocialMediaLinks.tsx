@@ -1,5 +1,5 @@
 import {GoMail} from "react-icons/go";
-import {FaLinkedin} from "react-icons/fa";
+import {FaLinkedin, FaGithubSquare} from "react-icons/fa";
 
 interface SocialMediaLink {
   key: string
@@ -24,6 +24,13 @@ export const getSocialMediaLinks = (): SocialMediaLink[] => {
       hover_text: "LinkedIn profile",
       url: "https://www.linkedin.com/in/richard-mohr-7a8585245",
       icon: <FaLinkedin size={"1.5em"}/>
+    },
+    {
+      key: "github",
+      text: "GitHub",
+      hover_text: "GitHub profile",
+      url: "https://github.com/CookieCake99",
+      icon: <FaGithubSquare size={"1.5em"}/>
     }
   ]
 }

@@ -12,6 +12,7 @@ export const SocialMediaLinks = (): JSX.Element => {
         title={value.hover_text}
         className={"socials-link"}
       >
+        <span/>
         {value.icon}
       </a>
     })}
