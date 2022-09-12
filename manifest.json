@@ -1,0 +1,15 @@
+{
+  "short_name": "Portfolio",
+  "name": "Richard Mohr Portfolio",
+  "icons": [
+    {
+      "src": "logo64.svg",
+      "sizes": "64x64",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
